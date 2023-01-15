@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AtcHelperModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Aircraft">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Manufacturer" Type="nvarchar" MaxLength="100" />
+          <Property Name="Model" Type="nvarchar" MaxLength="100" />
+          <Property Name="TypeDesignator" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+          <Property Name="SimplifiedEngineType" Type="nvarchar" MaxLength="100" />
+          <Property Name="EngineCount" Type="int" />
+          <Property Name="WTC" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Airports">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IATA_ID" Type="nvarchar" MaxLength="100" />
+          <Property Name="ICAO_ID" Type="nvarchar" MaxLength="100" />
+          <Property Name="Location" Type="nvarchar" MaxLength="100" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Country" Type="nvarchar" MaxLength="100" />
+          <Property Name="SidRequired" Type="bit" Nullable="false" />
+          <Property Name="HasDeparturePlan" Type="bit" Nullable="false" />
+          <Property Name="IsConfigured" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AirportSid_Restrictions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Airport_ICAO_Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="SID_Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Max_Cruise_Alt" Type="int" />
+          <Property Name="Min_Cruise_Alt" Type="int" />
+          <Property Name="RNAV_Only" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="SID_Name" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CallSigns">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AirlineID" Type="nvarchar" MaxLength="100" />
+          <Property Name="CallSign" Type="nvarchar" MaxLength="100" />
+          <Property Name="Company" Type="nvarchar" MaxLength="255" />
+          <Property Name="Country" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DeparturePlans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ICAO_ID" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="FlightRules" Type="nvarchar" MaxLength="4" />
+          <Property Name="SID_ID" Type="nvarchar" MaxLength="10" />
+          <Property Name="Transition_ID" Type="nvarchar" MaxLength="10" />
+          <Property Name="DirectionOfFlight" Type="nvarchar" MaxLength="6" />
+          <Property Name="Runway" Type="nvarchar" MaxLength="7" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AtcHelperModelStoreContainer">
+          <EntitySet Name="Aircraft" EntityType="Self.Aircraft" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Airports" EntityType="Self.Airports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AirportSid_Restrictions" EntityType="Self.AirportSid_Restrictions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CallSigns" EntityType="Self.CallSigns" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeparturePlans" EntityType="Self.DeparturePlans" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AtcHelperModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Aircraft">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Manufacturer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TypeDesignator" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EngineType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SimplifiedEngineType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EngineCount" Type="Int32" />
+          <Property Name="WTC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Airport">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IATA_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ICAO_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SidRequired" Type="Boolean" Nullable="false" />
+          <Property Name="HasDeparturePlan" Type="Boolean" Nullable="false" />
+          <Property Name="IsConfigured" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AirportSid_Restrictions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Airport_ICAO_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EngineType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Max_Cruise_Alt" Type="Int32" />
+          <Property Name="Min_Cruise_Alt" Type="Int32" />
+          <Property Name="RNAV_Only" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SID_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CallSign">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AirlineID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CallSign1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DeparturePlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ICAO_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FlightRules" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="SID_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Transition_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DirectionOfFlight" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="Runway" Type="String" MaxLength="7" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AtcHelperEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Aircraft" EntityType="Self.Aircraft" />
+          <EntitySet Name="Airports" EntityType="Self.Airport" />
+          <EntitySet Name="AirportSid_Restrictions" EntityType="Self.AirportSid_Restrictions" />
+          <EntitySet Name="CallSigns" EntityType="Self.CallSign" />
+          <EntitySet Name="DeparturePlans" EntityType="Self.DeparturePlan" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AtcHelperModelStoreContainer" CdmEntityContainer="AtcHelperEntities">
+          <EntitySetMapping Name="Aircraft">
+            <EntityTypeMapping TypeName="AtcHelperModel.Aircraft">
+              <MappingFragment StoreEntitySet="Aircraft">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="TypeDesignator" ColumnName="TypeDesignator" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+                <ScalarProperty Name="SimplifiedEngineType" ColumnName="SimplifiedEngineType" />
+                <ScalarProperty Name="EngineCount" ColumnName="EngineCount" />
+                <ScalarProperty Name="WTC" ColumnName="WTC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Airports">
+            <EntityTypeMapping TypeName="AtcHelperModel.Airport">
+              <MappingFragment StoreEntitySet="Airports">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IATA_ID" ColumnName="IATA_ID" />
+                <ScalarProperty Name="ICAO_ID" ColumnName="ICAO_ID" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="SidRequired" ColumnName="SidRequired" />
+                <ScalarProperty Name="HasDeparturePlan" ColumnName="HasDeparturePlan" />
+                <ScalarProperty Name="IsConfigured" ColumnName="IsConfigured" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AirportSid_Restrictions">
+            <EntityTypeMapping TypeName="AtcHelperModel.AirportSid_Restrictions">
+              <MappingFragment StoreEntitySet="AirportSid_Restrictions">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Airport_ICAO_Id" ColumnName="Airport_ICAO_Id" />
+                <ScalarProperty Name="SID_Id" ColumnName="SID_Id" />
+                <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+                <ScalarProperty Name="Max_Cruise_Alt" ColumnName="Max_Cruise_Alt" />
+                <ScalarProperty Name="Min_Cruise_Alt" ColumnName="Min_Cruise_Alt" />
+                <ScalarProperty Name="RNAV_Only" ColumnName="RNAV_Only" />
+                <ScalarProperty Name="SID_Name" ColumnName="SID_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CallSigns">
+            <EntityTypeMapping TypeName="AtcHelperModel.CallSign">
+              <MappingFragment StoreEntitySet="CallSigns">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AirlineID" ColumnName="AirlineID" />
+                <ScalarProperty Name="CallSign1" ColumnName="CallSign" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeparturePlans">
+            <EntityTypeMapping TypeName="AtcHelperModel.DeparturePlan">
+              <MappingFragment StoreEntitySet="DeparturePlans">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ICAO_ID" ColumnName="ICAO_ID" />
+                <ScalarProperty Name="FlightRules" ColumnName="FlightRules" />
+                <ScalarProperty Name="SID_ID" ColumnName="SID_ID" />
+                <ScalarProperty Name="Transition_ID" ColumnName="Transition_ID" />
+                <ScalarProperty Name="DirectionOfFlight" ColumnName="DirectionOfFlight" />
+                <ScalarProperty Name="Runway" ColumnName="Runway" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

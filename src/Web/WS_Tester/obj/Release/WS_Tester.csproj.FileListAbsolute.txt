@@ -1,0 +1,10 @@
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\bin\Release\WS_Tester.exe.config
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\bin\Release\WS_Tester.exe
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\bin\Release\WS_Tester.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.csproj.SuggestedBindingRedirects.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.Properties.Resources.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.csproj.GenerateResource.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.exe
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\WS_Tester\obj\Release\WS_Tester.pdb

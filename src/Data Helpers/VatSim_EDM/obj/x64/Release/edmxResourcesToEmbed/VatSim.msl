@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VatSimModelStoreContainer" CdmEntityContainer="VatSimEntities">
+    <EntitySetMapping Name="Aircraft">
+      <EntityTypeMapping TypeName="VatSimModel.Aircraft">
+        <MappingFragment StoreEntitySet="Aircraft">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="TypeDesignator" ColumnName="TypeDesignator" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="SimplifiedEngineType" ColumnName="SimplifiedEngineType" />
+          <ScalarProperty Name="EngineCount" ColumnName="EngineCount" />
+          <ScalarProperty Name="WTC" ColumnName="WTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Airports">
+      <EntityTypeMapping TypeName="VatSimModel.Airport">
+        <MappingFragment StoreEntitySet="Airports">
+          <ScalarProperty Name="IsConfigured" ColumnName="IsConfigured" />
+          <ScalarProperty Name="HasDeparturePlan" ColumnName="HasDeparturePlan" />
+          <ScalarProperty Name="SidRequired" ColumnName="SidRequired" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IATA_ID" ColumnName="IATA_ID" />
+          <ScalarProperty Name="ICAO_ID" ColumnName="ICAO_ID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AirportSid_Restrictions">
+      <EntityTypeMapping TypeName="VatSimModel.AirportSid_Restrictions">
+        <MappingFragment StoreEntitySet="AirportSid_Restrictions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Airport_ICAO_Id" ColumnName="Airport_ICAO_Id" />
+          <ScalarProperty Name="SID_Id" ColumnName="SID_Id" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="Max_Cruise_Alt" ColumnName="Max_Cruise_Alt" />
+          <ScalarProperty Name="Min_Cruise_Alt" ColumnName="Min_Cruise_Alt" />
+          <ScalarProperty Name="RNAV_Only" ColumnName="RNAV_Only" />
+          <ScalarProperty Name="SID_Name" ColumnName="SID_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CallSigns">
+      <EntityTypeMapping TypeName="VatSimModel.CallSign">
+        <MappingFragment StoreEntitySet="CallSigns">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AirlineID" ColumnName="AirlineID" />
+          <ScalarProperty Name="CallSign1" ColumnName="CallSign" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeparturePlans">
+      <EntityTypeMapping TypeName="VatSimModel.DeparturePlan">
+        <MappingFragment StoreEntitySet="DeparturePlans">
+          <ScalarProperty Name="Runway" ColumnName="Runway" />
+          <ScalarProperty Name="DirectionOfFlight" ColumnName="DirectionOfFlight" />
+          <ScalarProperty Name="Transition_ID" ColumnName="Transition_ID" />
+          <ScalarProperty Name="SID_ID" ColumnName="SID_ID" />
+          <ScalarProperty Name="FlightRules" ColumnName="FlightRules" />
+          <ScalarProperty Name="ICAO_ID" ColumnName="ICAO_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

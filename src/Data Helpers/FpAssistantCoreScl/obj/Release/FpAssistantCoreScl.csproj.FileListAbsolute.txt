@@ -1,0 +1,71 @@
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.dll.config
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.pdb
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Newtonsoft.Json.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Buffers.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Memory.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Json.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.ValueTuple.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Newtonsoft.Json.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Buffers.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Memory.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Json.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.ValueTuple.xml
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCore.ResourcesFpa.resources
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.GenerateResource.cache
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.CopyComplete
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.dll
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.pdb
+C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.dll.config
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\FpAssistantCoreScl.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Newtonsoft.Json.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Buffers.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Memory.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Json.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.ValueTuple.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\EntityFramework.SqlServerCompact.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\Newtonsoft.Json.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Buffers.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Memory.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Text.Json.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\bin\Release\System.ValueTuple.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCore.ResourcesFpa.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.GenerateResource.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.csproj.CopyComplete
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\FpAssistantCoreScl\obj\Release\FpAssistantCoreScl.pdb

@@ -1,0 +1,14 @@
+CollapsibleGroupBox:
+June 25, 2004 Initial 1.0 release
+
+June 27, 2004 1.1 QFE release
+
+January 3, 2006 1.2
+- Built with Visual Studio .NET 2003
+- Added monkfinger's fix for resizing (see message board)
+- Added Doug Case's request to programatically set a groupbox to a collapsed state
+- Removed commented code from CollapsibleGroupBox.cs
+
+
+
+TODO: maybe add a value change delegate to CollapseBox?

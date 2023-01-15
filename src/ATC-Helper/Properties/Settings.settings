@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ATC_Helper.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Pdc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.pdcclt</Value>
+    </Setting>
+    <Setting Name="PdcNoDep" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.pdccltd</Value>
+    </Setting>
+    <Setting Name="PdcMe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.pdccltme</Value>
+    </Setting>
+    <Setting Name="ATC_Helper_chrisgonzalez_Logging" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://chrisgonzalez.net/WS/Logging.asmx</Value>
+    </Setting>
+    <Setting Name="ATC_Helper_WebService_ATC_HelperData" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://chrisgonzalez.net/WS/ATC-HelperData.asmx</Value>
+    </Setting>
+    <Setting Name="Collapse_AirportDetails" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Collapse_FlightplanDetails" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Collapse_ClearanceDetails" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Collapse_PDCCommands" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RememberWindowsSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="frmMainPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="frmSettingsPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="frmAircraftPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="frmAirportPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="frmCallsignPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

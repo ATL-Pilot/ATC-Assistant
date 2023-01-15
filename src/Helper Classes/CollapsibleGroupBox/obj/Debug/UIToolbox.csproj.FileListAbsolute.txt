@@ -1,0 +1,24 @@
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\bin\Debug\UIToolbox.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\bin\Debug\UIToolbox.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.CollapseBox.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.CollapsibleGroupBox.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.ExpandingPanel.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.ImageButton.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.OwnerDrawButton.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.csproj.GenerateResource.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Source Code\Samples\CollapsibleGroupBox_1_2\obj\Debug\UIToolbox.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\bin\Debug\UIToolbox.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\bin\Debug\UIToolbox.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.CollapseBox.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.CollapsibleGroupBox.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.ExpandingPanel.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.ImageButton.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.OwnerDrawButton.resources
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.csproj.GenerateResource.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\CollapsibleGroupBox\obj\Debug\UIToolbox.pdb

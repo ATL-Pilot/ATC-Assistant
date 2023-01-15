@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ErrorLoggingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="ApplicationID" />
+    </Key>
+    <Property Name="ApplicationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ApplicationName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fields">
+    <Key>
+      <PropertyRef Name="FieldID" />
+    </Key>
+    <Property Name="FieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CallSign" Type="varchar" MaxLength="10" />
+    <Property Name="ACType" Type="varchar" MaxLength="10" />
+    <Property Name="FlightRule" Type="varchar" MaxLength="5" />
+    <Property Name="Depart" Type="varchar" MaxLength="5" />
+    <Property Name="Arrive" Type="varchar" MaxLength="5" />
+    <Property Name="Alternate" Type="varchar" MaxLength="5" />
+    <Property Name="CruiseAtl" Type="varchar" MaxLength="10" />
+    <Property Name="Scratch" Type="varchar(max)" />
+    <Property Name="Squawk" Type="varchar" MaxLength="10" />
+    <Property Name="Route" Type="varchar(max)" />
+    <Property Name="Remarks" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="LogEntries">
+    <Key>
+      <PropertyRef Name="LogEntryID" />
+    </Key>
+    <Property Name="LogEntryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ApplicationID" Type="int" Nullable="false" />
+    <Property Name="Exception" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="StackTrace" Type="varchar(max)" Nullable="false" />
+    <Property Name="Action" Type="varchar(max)" Nullable="false" />
+    <Property Name="FieldId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_LogEntries_Applications">
+    <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+    <End Role="LogEntries" Type="Self.LogEntries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationID" />
+      </Principal>
+      <Dependent Role="LogEntries">
+        <PropertyRef Name="ApplicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogEntries_Fields">
+    <End Role="Fields" Type="Self.Fields" Multiplicity="1" />
+    <End Role="LogEntries" Type="Self.LogEntries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fields">
+        <PropertyRef Name="FieldID" />
+      </Principal>
+      <Dependent Role="LogEntries">
+        <PropertyRef Name="FieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ErrorLoggingModelStoreContainer">
+    <EntitySet Name="Applications" EntityType="Self.Applications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fields" EntityType="Self.Fields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogEntries" EntityType="Self.LogEntries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_LogEntries_Applications" Association="Self.FK_LogEntries_Applications">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="LogEntries" EntitySet="LogEntries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogEntries_Fields" Association="Self.FK_LogEntries_Fields">
+      <End Role="Fields" EntitySet="Fields" />
+      <End Role="LogEntries" EntitySet="LogEntries" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

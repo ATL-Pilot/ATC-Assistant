@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAirportData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAirportDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAirportDataResult" type="tns:ArrayOfAirport" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAirport">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Airport" nillable="true" type="tns:Airport" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Airport">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="IATA_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICAO_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SidRequired" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="HasDeparturePlan" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsConfigured" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAircraftData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAircraftDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAircraftDataResult" type="tns:ArrayOfAircraft" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAircraft">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Aircraft" nillable="true" type="tns:Aircraft" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Aircraft">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeDesignator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EngineType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SimplifiedEngineType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EngineCount" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="WTC" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSidRestrictionData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSidRestrictionDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSidRestrictionDataResult" type="tns:ArrayOfAirportSid_Restrictions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAirportSid_Restrictions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AirportSid_Restrictions" nillable="true" type="tns:AirportSid_Restrictions" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AirportSid_Restrictions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Airport_ICAO_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SID_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EngineType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Cruise_Alt" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Cruise_Alt" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RNAV_Only" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SID_Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDeparturePlanData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDeparturePlanDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDeparturePlanDataResult" type="tns:ArrayOfDeparturePlan" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDeparturePlan">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DeparturePlan" nillable="true" type="tns:DeparturePlan" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DeparturePlan">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICAO_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlightRules" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SID_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Transition_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DirectionOfFlight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Runway" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCallSigns">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCallSignsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCallSignsResult" type="tns:ArrayOfCallSign" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCallSign">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CallSign" nillable="true" type="tns:CallSign" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CallSign">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AirlineID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CallSign1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAirportDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAirportData" />
+  </wsdl:message>
+  <wsdl:message name="GetAirportDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAirportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAircraftData" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAircraftDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSidRestrictionDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSidRestrictionData" />
+  </wsdl:message>
+  <wsdl:message name="GetSidRestrictionDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSidRestrictionDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDeparturePlanDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDeparturePlanData" />
+  </wsdl:message>
+  <wsdl:message name="GetDeparturePlanDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDeparturePlanDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCallSignsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCallSigns" />
+  </wsdl:message>
+  <wsdl:message name="GetCallSignsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCallSignsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ATC_HelperDataSoap">
+    <wsdl:operation name="GetAirportData">
+      <wsdl:input message="tns:GetAirportDataSoapIn" />
+      <wsdl:output message="tns:GetAirportDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <wsdl:input message="tns:GetAircraftDataSoapIn" />
+      <wsdl:output message="tns:GetAircraftDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSidRestrictionData">
+      <wsdl:input message="tns:GetSidRestrictionDataSoapIn" />
+      <wsdl:output message="tns:GetSidRestrictionDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeparturePlanData">
+      <wsdl:input message="tns:GetDeparturePlanDataSoapIn" />
+      <wsdl:output message="tns:GetDeparturePlanDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallSigns">
+      <wsdl:input message="tns:GetCallSignsSoapIn" />
+      <wsdl:output message="tns:GetCallSignsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ATC_HelperDataSoap" type="tns:ATC_HelperDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAirportData">
+      <soap:operation soapAction="http://tempuri.org/GetAirportData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <soap:operation soapAction="http://tempuri.org/GetAircraftData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSidRestrictionData">
+      <soap:operation soapAction="http://tempuri.org/GetSidRestrictionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeparturePlanData">
+      <soap:operation soapAction="http://tempuri.org/GetDeparturePlanData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallSigns">
+      <soap:operation soapAction="http://tempuri.org/GetCallSigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ATC_HelperDataSoap12" type="tns:ATC_HelperDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAirportData">
+      <soap12:operation soapAction="http://tempuri.org/GetAirportData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <soap12:operation soapAction="http://tempuri.org/GetAircraftData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSidRestrictionData">
+      <soap12:operation soapAction="http://tempuri.org/GetSidRestrictionData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeparturePlanData">
+      <soap12:operation soapAction="http://tempuri.org/GetDeparturePlanData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallSigns">
+      <soap12:operation soapAction="http://tempuri.org/GetCallSigns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ATC_HelperData">
+    <wsdl:port name="ATC_HelperDataSoap" binding="tns:ATC_HelperDataSoap">
+      <soap:address location="https://chrisgonzalez.net/WS/ATC-HelperData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ATC_HelperDataSoap12" binding="tns:ATC_HelperDataSoap12">
+      <soap12:address location="https://chrisgonzalez.net/WS/ATC-HelperData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LogError">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="application" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="exception" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stackTrace" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fields" type="tns:Fields" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Fields">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CallSign" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlightRules" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartureAirport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArrivalAirport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlternateAirport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CruiseAltitude" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ScratchPad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Squwak" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Route" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LogErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LogErrorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LogErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:LogError" />
+  </wsdl:message>
+  <wsdl:message name="LogErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:LogErrorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LoggingSoap">
+    <wsdl:operation name="LogError">
+      <wsdl:input message="tns:LogErrorSoapIn" />
+      <wsdl:output message="tns:LogErrorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoggingSoap" type="tns:LoggingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LogError">
+      <soap:operation soapAction="http://tempuri.org/LogError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoggingSoap12" type="tns:LoggingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LogError">
+      <soap12:operation soapAction="http://tempuri.org/LogError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Logging">
+    <wsdl:port name="LoggingSoap" binding="tns:LoggingSoap">
+      <soap:address location="https://chrisgonzalez.net/WS/Logging.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoggingSoap12" binding="tns:LoggingSoap12">
+      <soap12:address location="https://chrisgonzalez.net/WS/Logging.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

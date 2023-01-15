@@ -1,0 +1,6 @@
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\bin\Release\ATCHelper-CommonClasses.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\bin\Release\ATCHelper-CommonClasses.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\obj\Release\ATCHelper-CommonClasses.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\obj\Release\ATCHelper-CommonClasses.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\obj\Release\ATCHelper-CommonClasses.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\ATCHelper-CommonClasses\obj\Release\ATCHelper-CommonClasses.pdb

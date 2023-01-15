@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0A5178E-F1C8-4702-8604-9FA76D557000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VatSim</RootNamespace>
+    <AssemblyName>VatSim</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\ConfigurableWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\PrevInstance.cs" />
+    <Compile Include="Core\VersionInfo.cs" />
+    <Compile Include="Data\MapPopupInfo.cs" />
+    <Compile Include="Data\FlightRulesExtensions.cs" />
+    <Compile Include="Data\FacilityExtensions.cs" />
+    <Compile Include="Data\RatingExtensions.cs" />
+    <Compile Include="Data\Country.cs" />
+    <Compile Include="Data\Airport.cs" />
+    <Compile Include="Data\Fir.cs" />
+    <Compile Include="Data\Uir.cs" />
+    <Compile Include="Data\Flight.cs" />
+    <Compile Include="Data\FirPositionInfo.cs" />
+    <Compile Include="Data\UirPositionInfo.cs" />
+    <Compile Include="Data\AirportPositionInfo.cs" />
+    <Compile Include="Data\AirportOps.cs" />
+    <Compile Include="Data\Atc.cs" />
+    <Compile Include="Data\DataManager.cs" />
+    <Compile Include="Data\DataObjects.cs" />
+    <Compile Include="Data\DataUpdateManager.cs" />
+    <Compile Include="Data\DataVersionInfo.cs" />
+    <Compile Include="Data\Facility.cs" />
+    <Compile Include="Data\FlightRules.cs" />
+    <Compile Include="Data\FlightStatus.cs" />
+    <Compile Include="Data\IDataManager.cs" />
+    <Compile Include="Data\IDataUpdateManager.cs" />
+    <Compile Include="Data\MapPopupType.cs" />
+    <Compile Include="Data\Meta.cs" />
+    <Compile Include="Data\NetworkServer.cs" />
+    <Compile Include="Data\PilotRating.cs" />
+    <Compile Include="Data\Rating.cs" />
+    <Compile Include="Data\RawData.cs" />
+    <Compile Include="Data\RawDataController.cs" />
+    <Compile Include="Data\RawDataFlightPlan.cs" />
+    <Compile Include="Data\RawDataGeneral.cs" />
+    <Compile Include="Data\RawDataPilot.cs" />
+    <Compile Include="Data\RawDataPilotRating.cs" />
+    <Compile Include="Data\RawDataServer.cs" />
+    <Compile Include="Data\WorldPoint.cs" />
+    <Compile Include="Data\WorldRect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snapshots\ISnapshotManager.cs" />
+    <Compile Include="Snapshots\Snapshot.cs" />
+    <Compile Include="Snapshots\SnapshotManager.cs" />
+    <Compile Include="Snapshots\SnapshotRefreshErrorArgs.cs" />
+    <Compile Include="Snapshots\SnapshotRefreshErrorType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

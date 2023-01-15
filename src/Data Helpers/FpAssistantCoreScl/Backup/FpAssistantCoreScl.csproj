@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Me\OneDrive\Documents\Visual Studio 2022\Projects\CLT Clearence\CLT Clearence\bin\Debug\FpAssistantCoreScl.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{134313DC-AF49-4D7D-A11C-6B5993C7A3E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FpAssistantCoreScl</AssemblyName>
+    <ApplicationVersion>2021.10.8.1</ApplicationVersion>
+    <RootNamespace>FpAssistantCore</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Text.Json">
+      <HintPath>lib\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FpAssistantWebApi\Models\AzimuthDistance.cs" />
+    <Compile Include="FpAssistantWebApi\Models\CartesianCoordinateWeb.cs" />
+    <Compile Include="FpAssistantWebApi\Models\LatLongCoordinate.cs" />
+    <Compile Include="Pbn\BaseObjectPbn.cs" />
+    <Compile Include="Pbn\PbnCalculations.cs" />
+    <Compile Include="Pbn\PbnRnpAr.cs" />
+    <Compile Include="Icao\ICAOLocationIndicators.cs" />
+    <Compile Include="IcaoPansOps\BaseObjectPansOps.cs" />
+    <Compile Include="IcaoPansOps\Dme.cs" />
+    <Compile Include="IcaoPansOps\BasicIlsSurfaces.cs" />
+    <Compile Include="IcaoPansOps\MinimumLengthRnavSegment.cs" />
+    <Compile Include="IcaoPansOps\WaypointStabilizationDistance.cs" />
+    <Compile Include="IcaoPansOps\OasConstantsAircraftCategories.cs" />
+    <Compile Include="IcaoPansOps\OasConstantsMissedApproachSlopes.cs" />
+    <Compile Include="IcaoPansOps\OasConstantsGreenPagesGlidePathAngles.cs" />
+    <Compile Include="IcaoPansOps\OasConstantsGreenPagesThreasholdDistances.cs" />
+    <Compile Include="IcaoPansOps\OasConstantsGreenPages.cs" />
+    <Compile Include="IcaoPansOps\ObstacleClearanceAltitudeHeightOasBasicIls.cs" />
+    <Compile Include="IcaoPansOps\VisualManoeuvringAircraftCategory.cs" />
+    <Compile Include="IcaoPansOps\VisualManoeuvringCirclingArea.cs" />
+    <Compile Include="Geographical\GeoCoordinateBasic.cs" />
+    <Compile Include="Geographical\GeoArc.cs" />
+    <Compile Include="Geographical\GeoAzimuthDistance.cs" />
+    <Compile Include="Geographical\GeoCircle.cs" />
+    <Compile Include="Geographical\GeoCoordinate.cs" />
+    <Compile Include="Geographical\GeoCoordinateElevation.cs" />
+    <Compile Include="Geographical\GeoCoordinateElevationCollection.cs" />
+    <Compile Include="Geographical\MapDatums.cs" />
+    <Compile Include="Geographical\MapProjections.cs" />
+    <Compile Include="Geographical\MapProjectionUtmWgs84.cs" />
+    <Compile Include="Geographical\MapProjectionUtmNad83.cs" />
+    <Compile Include="Geographical\GeoLine.cs" />
+    <Compile Include="Geographical\GeoLineString.cs" />
+    <Compile Include="Geographical\GeoMapAction.cs" />
+    <Compile Include="Geographical\GeoMapElementActions.cs" />
+    <Compile Include="Geographical\GmlDimension.cs" />
+    <Compile Include="Geographical\IGeoMapElement.cs" />
+    <Compile Include="Geographical\GeoMapElement.cs" />
+    <Compile Include="Geographical\GeoMapElementCollection.cs" />
+    <Compile Include="Geographical\GeoMapElementEngine.cs" />
+    <Compile Include="Geographical\GeoMapEngineElement.cs" />
+    <Compile Include="Geographical\GeoMapImage.cs" />
+    <Compile Include="Geographical\GeoPoint.cs" />
+    <Compile Include="Geographical\GeoMapIcon.cs" />
+    <Compile Include="Geographical\GeoPolygon.cs" />
+    <Compile Include="Geographical\GmlHelper.cs" />
+    <Compile Include="Geographical\MagneticDeclination.cs" />
+    <Compile Include="Geographical\MagVar.cs" />
+    <Compile Include="Geographical\CoordinateSystem.cs" />
+    <Compile Include="Geographical\CoordinateSystems.cs" />
+    <Compile Include="Geographical\ProjectedCoordinateSystem.cs" />
+    <Compile Include="Geographical\CoordinateSystemUnits.cs" />
+    <Compile Include="Geographical\GeoCoordinateFormat.cs" />
+    <Compile Include="Geographical\CardinalDirection.cs" />
+    <Compile Include="Geographical\LatitudeCardinalDirection.cs" />
+    <Compile Include="Geographical\LongitudeCardinalDirection.cs" />
+    <Compile Include="Geographical\CsMapStatus.cs" />
+    <Compile Include="Geographical\GraphicalRepresentation.cs" />
+    <Compile Include="Geographical\ObstacleGeographyMappings.cs" />
+    <Compile Include="FaaTerps\BaseObjectTerps.cs" />
+    <Compile Include="FaaTerps\DecelerationDistanceGradients.cs" />
+    <Compile Include="FaaTerps\LtpFtpToPfaf.cs" />
+    <Compile Include="FaaTerps\MathFaa.cs" />
+    <Compile Include="FaaTerps\NonPrecisionStraightInApproach.cs" />
+    <Compile Include="FaaTerps\VerticalGuidanceSurface.cs" />
+    <Compile Include="FaaTerps\O82603c\TerpsO82603cCalculations.cs" />
+    <Compile Include="General\BaseObject.cs" />
+    <Compile Include="General\Angle.cs" />
+    <Compile Include="General\CompassBearing.cs" />
+    <Compile Include="General\DeveloperLicense.cs" />
+    <Compile Include="General\LicenseDetails.cs" />
+    <Compile Include="General\EncryptionMode.cs" />
+    <Compile Include="General\Encryption.cs" />
+    <Compile Include="General\FacetType.cs" />
+    <Compile Include="General\Facet.cs" />
+    <Compile Include="General\FacetCollection.cs" />
+    <Compile Include="General\GridCoordinate.cs" />
+    <Compile Include="General\Line2dPointType.cs" />
+    <Compile Include="General\Line2d.cs" />
+    <Compile Include="General\Line3dPointType.cs" />
+    <Compile Include="General\Line3d.cs" />
+    <Compile Include="General\LinearDistance.cs" />
+    <Compile Include="General\Matrix3d.cs" />
+    <Compile Include="General\Percentage.cs" />
+    <Compile Include="General\Plane3d.cs" />
+    <Compile Include="General\Point2d.cs" />
+    <Compile Include="General\Point3d.cs" />
+    <Compile Include="General\Polygon.cs" />
+    <Compile Include="General\FpaColour.cs" />
+    <Compile Include="General\Temperature.cs" />
+    <Compile Include="General\Triangle2d.cs" />
+    <Compile Include="General\Triangle3d.cs" />
+    <Compile Include="General\Vector3d.cs" />
+    <Compile Include="General\ConstantMessages.cs" />
+    <Compile Include="General\LinearDistanceUnits.cs" />
+    <Compile Include="General\AngleUnits.cs" />
+    <Compile Include="General\LinearDistanceFormat.cs" />
+    <Compile Include="General\Axes.cs" />
+    <Compile Include="General\TemperatureUnits.cs" />
+    <Compile Include="General\DoubleExtensions.cs" />
+    <Compile Include="General\EnumsHelper.cs" />
+    <Compile Include="General\MathExtension.cs" />
+    <Compile Include="General\Point3dArrayExtension.cs" />
+    <Compile Include="General\StringExtensions.cs" />
+    <Compile Include="General\ObjectMappingProperties.cs" />
+    <Compile Include="General\MapObjectProperties.cs" />
+    <Compile Include="General\Utilities.cs" />
+    <Compile Include="General\DescriptionAttribute.cs" />
+    <Compile Include="Arinc424\Arinc424Data.cs" />
+    <Compile Include="Arinc424\Arinc424Io.cs" />
+    <Compile Include="Arinc424\BaseObjectArinc424.cs" />
+    <Compile Include="Arinc424\Arinc424RecordObjectTypes.cs" />
+    <Compile Include="Arinc424\Arinc424RecordGroupTypes.cs" />
+    <Compile Include="Arinc424\Arinc424SectionCodes.cs" />
+    <Compile Include="Arinc424\Arinc424ProductTestFlag.cs" />
+    <Compile Include="Arinc424\Arinc424LRSC.cs" />
+    <Compile Include="Arinc424\Arinc424PublicMilitaryIndicator.cs" />
+    <Compile Include="Arinc424\Airway.cs" />
+    <Compile Include="Arinc424\Arinc424Collection`1.cs" />
+    <Compile Include="Arinc424\Serialization\Arinc424AsciiDeserializer.cs" />
+    <Compile Include="Arinc424\Records\CycleDate.cs" />
+    <Compile Include="Arinc424\Records\SectorDataset.cs" />
+    <Compile Include="Arinc424\Records\Airport.cs" />
+    <Compile Include="Arinc424\Records\AirportApproach.cs" />
+    <Compile Include="Arinc424\Records\AirportHeliport_LocalizerGlideSlope.cs" />
+    <Compile Include="Arinc424\Records\AirportMsa.cs" />
+    <Compile Include="Arinc424\Records\AirportRunway.cs" />
+    <Compile Include="Arinc424\Records\AirportSid.cs" />
+    <Compile Include="Arinc424\Records\AirportSidStarApproach.cs" />
+    <Compile Include="Arinc424\Records\AirportStar.cs" />
+    <Compile Include="Arinc424\Records\IBaseRecord.cs" />
+    <Compile Include="Arinc424\Records\BaseRecord.cs" />
+    <Compile Include="Arinc424\Records\CommonRecordFields.cs" />
+    <Compile Include="Arinc424\Records\ControlledAirspace.cs" />
+    <Compile Include="Arinc424\Records\EnrouteAirway.cs" />
+    <Compile Include="Arinc424\Records\FieldStructure.cs" />
+    <Compile Include="Arinc424\Records\GridMora.cs" />
+    <Compile Include="Arinc424\Records\Header1.cs" />
+    <Compile Include="Arinc424\Records\Header2.cs" />
+    <Compile Include="Arinc424\Records\Heliport.cs" />
+    <Compile Include="Arinc424\Records\HeliportApproach.cs" />
+    <Compile Include="Arinc424\Records\HeliportMsa.cs" />
+    <Compile Include="Arinc424\Records\HeliportSid.cs" />
+    <Compile Include="Arinc424\Records\HeliportSidStarApproach.cs" />
+    <Compile Include="Arinc424\Records\HeliportStar.cs" />
+    <Compile Include="Arinc424\Records\NdbNavaid.cs" />
+    <Compile Include="Arinc424\Records\NdbNavaidEnroute.cs" />
+    <Compile Include="Arinc424\Records\NdbNavaidTerminal.cs" />
+    <Compile Include="Arinc424\Records\PathPoint.cs" />
+    <Compile Include="Arinc424\Records\RecordCollection.cs" />
+    <Compile Include="Arinc424\Records\RestrictiveAirspace.cs" />
+    <Compile Include="Arinc424\Records\VhfNavaid.cs" />
+    <Compile Include="Arinc424\Records\Waypoint.cs" />
+    <Compile Include="Arinc424\Records\WaypointEnroute.cs" />
+    <Compile Include="Arinc424\Records\WaypointHeliportTerminal.cs" />
+    <Compile Include="Arinc424\Records\WaypointTerminal.cs" />
+    <Compile Include="Aerodromes\Aerodrome.cs" />
+    <Compile Include="Aerodromes\AerodromeDataStore.cs" />
+    <Compile Include="Aerodromes\AerodromeSurfaces.cs" />
+    <Compile Include="Aerodromes\BaseObjectAerodromeSurfaces.cs" />
+    <Compile Include="Aerodromes\AerodromePart77Surfaces.cs" />
+    <Compile Include="Aerodromes\AerodromeObstacleSurfaces.cs" />
+    <Compile Include="Aerodromes\AerodromeAnnex14Surfaces.cs" />
+    <Compile Include="Aerodromes\Runway.cs" />
+    <Compile Include="GeneralAviation\AircraftFlightData.cs" />
+    <Compile Include="GeneralAviation\ADSBexchangeFeed.cs" />
+    <Compile Include="GeneralAviation\AirSpeed.cs" />
+    <Compile Include="GeneralAviation\Altitude.cs" />
+    <Compile Include="GeneralAviation\AngleOfBank.cs" />
+    <Compile Include="GeneralAviation\BaseObjectFasDataBlock.cs" />
+    <Compile Include="GeneralAviation\BaseObjectGeneral.cs" />
+    <Compile Include="GeneralAviation\Crc.cs" />
+    <Compile Include="GeneralAviation\CRCdelme.cs" />
+    <Compile Include="GeneralAviation\BlockTypes.cs" />
+    <Compile Include="GeneralAviation\SbasOperationTypes.cs" />
+    <Compile Include="GeneralAviation\GbasOperationTypes.cs" />
+    <Compile Include="GeneralAviation\SbasProviderIdentifiers.cs" />
+    <Compile Include="GeneralAviation\RunwayLetters.cs" />
+    <Compile Include="GeneralAviation\RunwayNumbers.cs" />
+    <Compile Include="GeneralAviation\SbasApproachPerformanceDesignators.cs" />
+    <Compile Include="GeneralAviation\GbasApproachPerformanceDesignators.cs" />
+    <Compile Include="GeneralAviation\RouteIndicators.cs" />
+    <Compile Include="GeneralAviation\ReferencePathDataSelectors.cs" />
+    <Compile Include="GeneralAviation\FasDatablock.cs" />
+    <Compile Include="GeneralAviation\GradientSlopeCalculator.cs" />
+    <Compile Include="GeneralAviation\GradientUnitTypes.cs" />
+    <Compile Include="GeneralAviation\Gradient.cs" />
+    <Compile Include="GeneralAviation\IndicatedAirSpeed.cs" />
+    <Compile Include="GeneralAviation\TemperatureCorrectionFormulaTypes.cs" />
+    <Compile Include="GeneralAviation\TemperatureCorrection.cs" />
+    <Compile Include="GeneralAviation\Constants.cs" />
+    <Compile Include="GeneralAviation\Criteria.cs" />
+    <Compile Include="GeneralAviation\CriteriaUnits.cs" />
+    <Compile Include="GeneralAviation\AirSpeedUnits.cs" />
+    <Compile Include="GeneralAviation\AltitudeUnits.cs" />
+    <Compile Include="GeneralAviation\AircraftTypes.cs" />
+    <Compile Include="GeneralAviation\WaypointTypes.cs" />
+    <Compile Include="GeneralAviation\WaypointSequences.cs" />
+    <Compile Include="GeneralAviation\Obstacles\BulkObstacleEvaluation.cs" />
+    <Compile Include="GeneralAviation\Obstacles\LineObstacle.cs" />
+    <Compile Include="GeneralAviation\Obstacles\LineObstacleSegment.cs" />
+    <Compile Include="GeneralAviation\Obstacles\Obstacle.cs" />
+    <Compile Include="GeneralAviation\Obstacles\ObstacleCollection.cs" />
+    <Compile Include="GeneralAviation\Obstacles\ObstacleEvaluation.cs" />
+    <Compile Include="GeneralAviation\Obstacles\ObstacleEvaluationResult.cs" />
+    <Compile Include="GeneralAviation\Obstacles\ObstacleEvaluationResultCollection.cs" />
+    <Compile Include="GeneralAviation\Obstacles\PointObstacle.cs" />
+    <Compile Include="GeneralAviation\Obstacles\PolygonObstacle.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ResourcesFpa.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

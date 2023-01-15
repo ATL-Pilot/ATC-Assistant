@@ -1,0 +1,20 @@
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\VatSim.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\VatSim.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\Castle.Core.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\Castle.Core.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\obj\Debug\VatSim.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\obj\Debug\VatSim.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\obj\Debug\VatSim.csproj.CopyComplete
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\obj\Debug\VatSim.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\CLT Clearence\VatSim\obj\Debug\VatSim.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\bin\Debug\VatSim.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\bin\Debug\VatSim.pdb
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\obj\Debug\VatSim.csproj.AssemblyReference.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\obj\Debug\VatSim.csproj.CoreCompileInputs.cache
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\obj\Debug\VatSim.csproj.CopyComplete
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\obj\Debug\VatSim.dll
+C:\Users\Me\OneDrive - ChrisGonzalez.net\Documents\Visual Studio 2022\Projects\ATC-Helper\VatSim\obj\Debug\VatSim.pdb

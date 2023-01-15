@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VatSimModel.Store" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aircraft">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="TypeDesignator" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="SimplifiedEngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="EngineCount" Type="int" />
+    <Property Name="WTC" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Airports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IATA_ID" Type="nvarchar" MaxLength="100" />
+    <Property Name="ICAO_ID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Location" Type="nvarchar" MaxLength="100" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Country" Type="nvarchar" MaxLength="100" />
+    <Property Name="SidRequired" Type="bit" Nullable="false" />
+    <Property Name="HasDeparturePlan" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AirportSid_Restrictions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Airport_ICAO_Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SID_Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Max_Cruise_Alt" Type="int" />
+    <Property Name="Min_Cruise_Alt" Type="int" />
+    <Property Name="RNAV_Only" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SID_Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CallSigns">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AirlineID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CallSign" Type="nvarchar" MaxLength="100" />
+    <Property Name="Company" Type="nvarchar" MaxLength="255" />
+    <Property Name="Country" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DeparturePlans">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ICAO_ID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="FlightRules" Type="nvarchar" MaxLength="4" />
+    <Property Name="SID_ID" Type="nvarchar" MaxLength="10" />
+    <Property Name="Transition_ID" Type="nvarchar" MaxLength="10" />
+    <Property Name="DirectionOfFlight" Type="nvarchar" MaxLength="6" />
+    <Property Name="Runway" Type="nvarchar" MaxLength="7" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VatSimModelStoreContainer">
+    <EntitySet Name="Aircraft" EntityType="Self.Aircraft" store:Type="Tables" />
+    <EntitySet Name="Airports" EntityType="Self.Airports" store:Type="Tables" />
+    <EntitySet Name="AirportSid_Restrictions" EntityType="Self.AirportSid_Restrictions" store:Type="Tables" />
+    <EntitySet Name="CallSigns" EntityType="Self.CallSigns" store:Type="Tables" />
+    <EntitySet Name="DeparturePlans" EntityType="Self.DeparturePlans" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

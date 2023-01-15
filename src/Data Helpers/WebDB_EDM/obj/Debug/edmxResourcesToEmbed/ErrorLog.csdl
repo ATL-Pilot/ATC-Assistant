@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ErrorLoggingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Application">
+    <Key>
+      <PropertyRef Name="ApplicationID" />
+    </Key>
+    <Property Name="ApplicationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="LogEntries" Relationship="Self.FK_LogEntries_Applications" FromRole="Applications" ToRole="LogEntries" />
+  </EntityType>
+  <EntityType Name="LogEntry">
+    <Key>
+      <PropertyRef Name="LogEntryID" />
+    </Key>
+    <Property Name="LogEntryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationID" Type="Int32" Nullable="false" />
+    <Property Name="Exception" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FieldId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Application" Relationship="Self.FK_LogEntries_Applications" FromRole="LogEntries" ToRole="Applications" />
+    <NavigationProperty Name="Field" Relationship="ErrorLoggingModel.FK_LogEntries_Fields" FromRole="LogEntry" ToRole="Field" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_LogEntries_Applications">
+    <End Role="Applications" Type="Self.Application" Multiplicity="1" />
+    <End Role="LogEntries" Type="Self.LogEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationID" />
+      </Principal>
+      <Dependent Role="LogEntries">
+        <PropertyRef Name="ApplicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ErrorLoggingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Applications" EntityType="Self.Application" />
+    <EntitySet Name="LogEntries" EntityType="Self.LogEntry" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_LogEntries_Applications" Association="Self.FK_LogEntries_Applications">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="LogEntries" EntitySet="LogEntries" />
+    </AssociationSet>
+    <EntitySet Name="Fields" EntityType="ErrorLoggingModel.Field" />
+    <AssociationSet Name="FK_LogEntries_Fields" Association="ErrorLoggingModel.FK_LogEntries_Fields">
+      <End Role="Field" EntitySet="Fields" />
+      <End Role="LogEntry" EntitySet="LogEntries" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Field">
+    <Key>
+      <PropertyRef Name="FieldID" />
+    </Key>
+    <Property Name="FieldID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CallSign" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ACType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FlightRule" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Depart" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Arrive" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Alternate" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CruiseAtl" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Scratch" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Squawk" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Route" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LogEntries" Relationship="ErrorLoggingModel.FK_LogEntries_Fields" FromRole="Field" ToRole="LogEntry" />
+  </EntityType>
+  <Association Name="FK_LogEntries_Fields">
+    <End Type="ErrorLoggingModel.Field" Role="Field" Multiplicity="1" />
+    <End Type="ErrorLoggingModel.LogEntry" Role="LogEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="FieldID" />
+      </Principal>
+      <Dependent Role="LogEntry">
+        <PropertyRef Name="FieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
